@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DAOEmpleado {
     public boolean guardar(EmpleadoPojo empleado){
-
+        
         return true;
     }
     public boolean eliminar(EmpleadoPojo pojo){

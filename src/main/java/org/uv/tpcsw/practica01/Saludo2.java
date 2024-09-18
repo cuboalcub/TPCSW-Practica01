@@ -4,6 +4,9 @@
  */
 package org.uv.tpcsw.practica01;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author abisai
@@ -12,7 +15,9 @@ public class Saludo2 implements IMensaje {
 
     @Override
     public void imprimir() {
-        System.out.println("Hola mundo");
+        Logger.getLogger(Saludo2.class.getName()). 
+                log(Level.INFO, "Hola mundo");
+        
     }
     
 }

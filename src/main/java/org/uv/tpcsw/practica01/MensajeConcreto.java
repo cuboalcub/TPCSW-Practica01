@@ -1,5 +1,8 @@
 package org.uv.tpcsw.practica01;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class MensajeConcreto {
 
     private String name = "";
@@ -10,11 +13,14 @@ public class MensajeConcreto {
 
     public MensajeConcreto() {
         this.name = " nombre";
-        System.out.println("Se ejecuta el Constructor");
+        Logger.getLogger(MensajeConcreto.class.getName()).
+                log(Level.INFO, "se ejecuta el constructor");
     }
 
-    public void imprimir() {
-        System.out.println(name + ":" + "Mensaje...");
+    public void imprimir(   ) {
+        
+        Logger.getLogger(MensajeConcreto.class.getName()). 
+                log(Level.INFO, "{0}: mensaje:  ");
     }
 
 }
